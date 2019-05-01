@@ -1,0 +1,84 @@
+@import "./normalize.scss";
+@import "../fonts/fonts.css";
+
+// <link
+//       href="https://fonts.googleapis.com/css?family=Playfair+Display:400,900"
+//       rel="stylesheet"
+//     />
+
+$brand: #9d59df;
+$font-bold: "Inter UI Bold", serif;
+
+.highlight {
+  color: $brand;
+}
+
+body {
+  font-family: "Inter UI Regular", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  h1,
+  h2,
+  h3 {
+    font-family: $font-bold;
+  }
+}
+
+.nav {
+  margin: 50px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+}
+
+.video-wrap {
+  right: 0;
+  width: 80%;
+  z-index: -1;
+  position: absolute;
+}
+
+.hero {
+  margin-top: 180px;
+  padding: 0 10%;
+
+  h1 {
+    font-weight: 900;
+    font-size: 76px;
+  }
+
+  .desc {
+    max-width: 520px;
+    p {
+      font-family: $font-bold;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 32px;
+    }
+  }
+}
+
+.bottom-menu {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  width: 100%;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .vertical-menu {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    font-family: $font-bold;
+    color: $brand;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    svg {
+      margin-right: 15px;
+    }
+  }
+}
